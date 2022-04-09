@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ucamp, Proyecto 2</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <header">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="./assets/img/menu-icon.png" alt="" class="logo">
+        </label>
+        <a href="#" class="link">
+         <img src="https://u-camp.utel.edu.mx/hs-fs/hubfs/logo_hubs-01.jpg?width=120&height=120&name=logo_hubs-01.jpg" class="logo">
+
+        </a>
+    
+    </nav>
+</header>
+<div class="container text-center">
+  <div class="row"> 
+    <div class="col-md-6"> 
+      <div class="text-center">
+        <h2>Agregar Producto</h2>
+      </div>
+             
+        <label class="text"><b>Nombre</b></label>
+        <input id="nombre" class="form-control" name="nombre" type="text" placeholder="Nombre">
+        <label class="text"><b>Categoria</b></label>
+        <select  id="categoria" class="form-control">
+          <option>Lacteo</option>
+          <option>Fruta</option>
+          <option>Verdura</option>
+          <option>Electronica</option>
+        </select>
+        <label class="text"><b>Fecha ingreso</b></label>
+        <input  id="fecha" class="form-control" name="fecha" type="date">
+        <button id="guardar" class="btn btn-info">Guardar</button>
+        <button id="cancelar" class="btn btn-warning">Limpiar</button>
+    </div>  
+    <div class="col-md-6">
+      <div class="text-center">
+        <h2 class="text1">Listado de Productos</h2>
+      </div>
+      <div class="table-responsive-md">
+        <section class ="section">  
+        </section>
+              
+      </div>
+          
+    </div>
+
+  </div>
+</div>
+    <footer class="navbar-fixed-bottom footer">
+        <div class="footer__items container">
+          <div class="footer__nav">
+            <p class="footer__contact footer__contact--second">
+              <img src="./assets/img/icon-phone.svg" class="footer__icon">
+              <a href="tel:+34555005500">+52 7891087310</a>
+            </p>
+
+            <div class="footer__location">
+              <p class="footer__contact">
+                <img src="./assets/img/icon-email.svg" class="footer__icon">
+                <a href="mailto:alejandro@solmasoluciones.com">alejandro@solmasoluciones.com</a>
+
+              </p>
+            </div>
+
+          </div>
+          <nav class="footer__nav">
+            <h4>Desarrollado por Alejandro Hernandez</h4>
+          </nav>
+
+          <div class="footer__social">
+            <a href="https://www.facebook.com/profile.php?id=100013366158652" class="footer__media"><img src="./assets/img/fb.svg" class="footer__img"></a>
+            <a href="https://twitter.com/Alejand70925582?t=mI3QAxvI7-Rw96a46x0B-w&s=09" class="footer__media"><img src="./assets/img/twitter.svg" class="footer__img"></a>
+            <a href="https://www.instagram.com/ah684321/?hl=es-la" class="footer__media footer__media--last"><img src="./assets/img/instagram.svg" class="footer__img"></a>
+          </div>
+        </div>
+        
+   
+      </section>
+      </footer>
+
+
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

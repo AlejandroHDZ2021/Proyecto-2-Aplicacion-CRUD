@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  
+}
+
+body {
+  background-color: hsla(217, 36%, 42%, 0.551);
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 0em;
+}
+
+
+
+nav{
+  margin-bottom: 80px;
+
+  height: 80px;
+  width: 100%;
+  background-color:rgb(29, 27, 62);
+}
+.link{
+  position: absolute;
+  padding: 20px 50px;
+}
+.logo{
+  margin-top: 10 px;
+  height: 40px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+
+}
+li a.active, li a:hover{
+  background: #009024;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 10px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+      text-decoration: none;
+  }
+}
+
+@media (max-width: 860px){
+  .checkbtn{
+      display: block;
+  }
+
+  .text1 {
+    margin-top: 50px;
+  }
+}
+h4 {
+  color:white
+}
+
+.container{
+  max-width: 1400px;
+  padding: 20px 0;
+  overflow: hidden;
+
+}
+
+/*
+Footer
+*/
+
+
+.footer{
+  margin-top: 100px;
+  background-color:rgb(29, 27, 62);
+  color: #fff;
+}
+
+.footer__items{
+  display: grid;
+}
+
+.footer__logo{
+  width: 150px;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.footer__contact{
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.footer__contact--second{
+  margin-bottom: 1em;
+}
+
+
+.footer__icon{
+  margin-top: 3px;
+}
+
+.footer__nav{
+  margin-top: 2.5em;
+  display: grid;
+  gap: .8em;
+}
+
+.footer__link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__social{
+  margin-top: 2em;
+ margin: 0 auto;
+}
+
+.footer__media{
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.footer__media--last{
+  margin-right: 0;
+}
+
+
+
+
+
+
+@media (min-width:700px){
+
+  .footer__items{
+      grid-template-columns: 2fr 1fr max-content max-content 1fr ;
+      gap: 2em;
+  }
+
+  .footer__nav{
+      margin-top: 0;
+  }
+
+  .footer__media{
+      margin-bottom: 1em;
+  }
+
+  .footer__social{
+      margin-top: 0em;
+      
+  }
+  
+  .footer__media--last{
+      margin-right: 0;
+  }
+}
