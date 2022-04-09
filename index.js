@@ -69,29 +69,24 @@ function editar(ev){
   document.getElementById('categoria').value = data.datos[1];
   document.getElementById('fecha').value = data.datos[2];
   currid=Number(id)
-  
-  console.log(currid);
 }
 
-
 function eliminar(ev){
-
   let id = ev.target.getAttribute('data-id')
   window.localStorage.removeItem(id) 
   currid=0;
   location.reload()
 }
 
-
-function fila(ev, id) {
-    let renglon = '<tr>'+
+function viewfila(ev, id) {
+    let fila = '<tr>'+
                     '<td>'+ ev.datos[0] + '</td>' +
                     '<td>'+ ev.datos[1] + '</td>' +
                     '<td>'+ ev.datos[2] + '</td>' +
                     '<td>  <a class="editar btn btn-info" type="submit" value="" data-id=' + id + '>Editar</a></td>' +
                     '<td>  <a class="eliminar btn btn-danger" type="submit" value="" data-id=' + id + '>Eliminar</a></td>' +
                   '</tr>';
-    return renglon;
+    return fila;
 }
 
 let tabla = '<table class="table table-striped">';
@@ -100,7 +95,6 @@ tabla += '<th scope="col">Categoria</th>';
 tabla += '<th scope="col">Fecha</th>';
 tabla += '<th scope="col">Editar</th>';
 tabla += '<th scope="col">Eliminar</th>';
-
 
 const container = document.querySelector('section[class="section"]')
 let ev = '';
@@ -112,7 +106,7 @@ if (n!==0){
       console.log(data)
 
       if (data !== null){
-        tabla += fila(data, i);   
+        tabla += viewfila(data, i);   
       }
     }
 }
