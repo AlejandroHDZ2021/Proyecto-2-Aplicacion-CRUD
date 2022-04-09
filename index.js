@@ -41,7 +41,7 @@ function guardar(ev) {
         n=currid;
       }
 
-      objeto.data = ev;
+      objeto.datos = ev;
       window.localStorage.setItem(n,JSON.stringify(objeto))
  
       currid=0;
@@ -62,9 +62,9 @@ function editar(ev){
   ev = window.localStorage.getItem(id)
   let data = JSON.parse(ev)
   
-  document.getElementById('nombre').value = data.data[0];
-  document.getElementById('categoria').value = data.data[1];
-  document.getElementById('fecha').value = data.data[2];
+  document.getElementById('nombre').value = data.datos[0];
+  document.getElementById('categoria').value = data.datos[1];
+  document.getElementById('fecha').value = data.datos[2];
   currid=Number(id)
 }
 
@@ -77,9 +77,9 @@ function eliminar(ev){
 
 function viewfila(ev, id) {
     let fila = '<tr>'+
-                    '<td>'+ ev.data[0] + '</td>' +
-                    '<td>'+ ev.data[1] + '</td>' +
-                    '<td>'+ ev.data[2] + '</td>' +
+                    '<td>'+ ev.datos[0] + '</td>' +
+                    '<td>'+ ev.datos[1] + '</td>' +
+                    '<td>'+ ev.datos[2] + '</td>' +
                     '<td>  <a class="editar btn btn-info" type="submit" value="" data-id=' + id + '>Editar</a></td>' +
                     '<td>  <a class="eliminar btn btn-danger" type="submit" value="" data-id=' + id + '>Eliminar</a></td>' +
                   '</tr>';

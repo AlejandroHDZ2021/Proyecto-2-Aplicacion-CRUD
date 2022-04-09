@@ -16,7 +16,7 @@ nav{
 
   height: 80px;
   width: 100%;
-  background-color:rgb(29, 27, 62);
+  background-color:rgb(27, 27, 41);
 }
 .link{
   position: absolute;
@@ -98,7 +98,7 @@ Footer
 
 .footer{
   margin-top: 100px;
-  background-color:rgb(29, 27, 62);
+  background-color:rgb(27, 27, 41);
   color: #fff;
 }
 
